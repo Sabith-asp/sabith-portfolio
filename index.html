@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/22a56fca96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="materials/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#myworks">Works</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Abdulla</span><br>Sabith from kerala</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="materials/user-3.png" alt="">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a dedicated web developer with a bachelor's degree in computer science. Currently, I'm focusing on mastering frontend technologies including HTML, CSS, JavaScript, and React. My passion lies in creating intuitive and visually appealing user interfaces. I thrive on continuous learning and stay updated with the latest trends in web development. Through personal projects and ongoing education, I aim to expand my skills and contribute meaningfully to the field. With a strong foundation in computer science and a commitment to excellence, I am poised to excel in the dynamic world of web development.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br>Using HTML,CSS,JS</li>
+                            <li><span>API Development</span><br>Django backend API development</li>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-current</span><br>Freelancing</li>
+                            <li><span>2024</span><br>Django backend API development of college website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>B.sc Computer Science from SULLAMUSSALAM</li>
+                            <li><span>2019-2021</span><br>12th from PPTMYHSS</li>
+                            <li><span>2017-2019</span><br>10th from PPTMYHSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- srvices section -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating websites, focusing on both their appearance and functionality. It involves elements like layout, graphics, and usability to engage users effectively. Using design principles and coding languages like HTML and CSS, web designers craft visually appealing and user-friendly interfaces that communicate messages clearly.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>API Development</h2>
+                    <p>Django REST Framework (DRF) is a Python toolkit for building web APIs with Django. It simplifies API development by providing tools for serialization, authentication, and permissions. DRF is popular for its flexibility and ease of use in creating robust APIs for web applications and mobile apps.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>UI/UX refers to the design of digital products like websites and apps. UI focuses on visual elements, while UX focuses on overall user experience. Good UI/UX design balances aesthetics with usability to improve user satisfaction and engagement.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- My works -->
+    <div id="myworks">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="materials/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Facebook</h3>
+                        <p>Facebook Sinup page Clone</p>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="materials/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>College Website</h3>
+                        <p>Sullamussalam College Website</p>
+                        <a href=""><i class="fa-solid fa-display"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="materials/work-4.png" alt="">
+                    <div class="layer">
+                        <h3>Backend</h3>
+                        <p>Sullamussalam college site</p>
+                        <a href=""><i class="fa-solid fa-code"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-contact">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope-open-text"></i> abdullasabithpulli@gamail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9567141190</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="materials/cv-1.pdf" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="right-contact">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your name">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="message" placeholder="Your Message" rows="7"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Abdull Sabith</p>
+    </div>
+</body>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</html>
